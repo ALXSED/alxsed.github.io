@@ -1,25 +1,142 @@
+html {
+    font-size: 20px;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
+    margin: 0px;
+
+}
+
+main {
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.intro {
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin: 0px;
+    padding: 5px 20px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.8s ease;
+
+
+    a {
+        padding-left: 15px;
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
 }
 
+header.scrolled {
+    padding: 0px;
+    background-color: red;
+}
 
 nav {
+        padding-right: 50px;
     a {
         color: black;
-        padding: 5px;
+        padding: 7px;
         text-decoration: none;
         font-weight: bold;
         font-size: 20px;
+        display: inline-block;
+        transition: transform 0.2s ease, color 0.2s ease;
+
+    }
+    a:hover {
+        font-weight: bolder;
+        transform: scale(1.2);
     }
 
-    padding-right: 30px;
 }
+
+#about {
+    p {
+        padding-left: 20px;
+    }
+}
+#education {
+    p {
+        padding-left: 20px;
+    }
+}
+
+
+.skills-images {
+    i {
+        padding: 20px;
+        color: black;
+        text-align: center;
+        font-size: 5.5rem;
+        background-color: red;
+        border-radius: 10px;
+    }
+}
+
+.project {
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: red;
+    padding: 20px;
+    transition: transform 0.2s ease, color 0.2s ease;
+
+    p {
+        margin-top: 0px;
+        white-space: pre-line;
+        margin: 10px;
+        padding: 10px;
+    }
+    h2 {
+        margin-bottom: 0px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 6px;
+        border-radius: 15px;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    a:hover {
+        transform: scale(1.1)
+    }
+
+}
+.project:hover {
+    transform: scale(1.05);
+}
+
+
 
 #resume-download {
     position: fixed;
@@ -32,6 +149,10 @@ nav {
     text-decoration: none;
     background-color: red;
     border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
 
-
+#resume-download:hover {
+    transform: scale(1.2);
 }

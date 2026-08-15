@@ -12,14 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     </head>
 
     <body>
         <header>
-            <h1>Alejandro Sedeno-Gonzalez</h1>
+            <a href="#">
+                <h1>Alejandro Sedeno-Gonzalez</h1>
+            </a>
             <nav id="navbar">
                 <a href="#"> Home</a>
                 <a href="about">About</a>
+                <a href="education">Education</a>
                 <a href="skils">Skills</a>
                 <a href="projects">Projects</a>
                 <a href="certifications">Certificaitons</a>
@@ -27,29 +31,99 @@
         </header>
 
         <main>
-            <h3 style="text-align:center;">this webpage is currently under construction i am currently learning html css and javascript this is all a work in progress <3 </h3>
+
+
+
+                <div class="intro">
+                    <img id="portrait" src="images/portrait.png">
+
+                    <h3 style="text-align:center;">this webpage is currently under construction I am currently learning html css and javascript this is all a work in progress <3 </h3>
+
+                    <h1>Hello, im Alejandro Sedeno-Gonzalez</h1>
+
+                    <h1 style="color: red;">Computer Science graduate from The University of Texas at El Paso</h1>
+
+                    <h2>Aspiring software engineer passionate about building useful software and solving meaningful problems.</h2>
+                </div>
 
             <section id="about">
                 <h2>About Me</h2>
+                <p>
+                    Ever since I was a kid I always had an emphatuation with computers I used to take appart anything electronic just for the fun of it, later on in highschool I took my first computer
+                    science class and instantly fell in love. The satisfaciton of seeing something I built come to life drove me to persure and obtain a degree in Computer Science. During my undergraduate
+                    studies I developed my skills primarily in Pyhton and Java though right now I am currently diversifying and learning the web development stack(html css javascript). I live for challenges
+                    wether thats on programming playing vidoe games or playing basketball i've never been one to shy away when a task becomes difficult.
+                </p>
+                <br>
             </section>
+
+            <hr>
+
+            <section id="education">
+                <h2>Education</h2>
+                <h3>The University of Texas At El Paso: Dec 2025</h3>
+                <p>Bachelors of Science in Computer Science: GPA 3.34/4.0</p>
+                <p>Relavent coursework: Data Structures, Advanced Object Oriented Programming, Computer Architecture, and Software Engineering I & II</p>
+                <br>
+            </section>
+
+            <hr>
 
             <section id="skills">
                 <h2>Skills</h2>
+
+                <div class="skills-images">
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-git custom-style"></i>
+                    <i class="fa-brands fa-github custom-style"></i>
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <br>
+
             </section>
+
+            <hr>
 
             <section id="projects">
                 <h2>Projects</h2>
+
+                <div class="project">
+                    <h2>Miners Bank</h2>
+                    <p>
+                        A Java-based command-line banking system meant to
+                        demonstrate object oriented programming principles
+                    </p>
+                    <a href="https://github.com/ALXSED/Miners-Bank" target="_blank">Check it out here</a>
+                </div>
+
+                <div class="project">
+                    <h2>Portfolio Website</h2>
+                    <p>
+                        A static portfolio website made in HTML CSS and JS
+                    </p><br>
+                    <a href="#">Check it out here</a>
+                </div>
             </section>
+
+            <hr>
 
             <section id="certifications">
                 <h2>Certifications</h2>
             </section>
 
-            <a id="resume-download" href="docs/Resume_Alejandro_Sedeno_gonzalez.pdf">Download Resume</a>
+            <a id="resume-download" href="docs/Resume_Alejandro_Sedeno_Gonzalez.pdf" target="_blank">Download Resume</a>
 
         </main>
         <footer>
-            <p>&copy; 2026 Alejandro Sedeno</p>
+
+            <p>&copy; 2026 Alejandro Sedeno-Gonzalez</p>
+
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
