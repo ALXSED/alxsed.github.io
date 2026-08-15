@@ -107,6 +107,7 @@ nav {
     border-radius: 10px;
     background-color: red;
     padding: 20px;
+    margin-bottom: 30px;
     transition: transform 0.2s ease, color 0.2s ease;
 
     p {
@@ -122,7 +123,7 @@ nav {
         text-decoration: none;
         color: white;
         background-color: black;
-        padding: 6px;
+        padding: 7px;
         border-radius: 15px;
         transition: transform 0.2s ease, color 0.2s ease;
     }
@@ -138,10 +139,76 @@ nav {
 
 
 
+.certificate-card {
+    max-width: 600px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: red;
+}
+
+.certificate-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.certificate-header i {
+    font-size: 2rem;
+}
+
+.certificate-header h3 {
+    margin: 0;
+}
+
+.certificate-header p {
+    margin: 0.25rem 0 0;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: green;
+}
+
+.updated {
+    font-size: 0.85rem;
+}
+
+.course-button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.course-button:hover {
+    transform:scale(1.1)
+}
+
+
+
 #resume-download {
     position: fixed;
     bottom: 30px;
     left: 50%;
+    transform: translateX(-50%);
     padding: 30px;
     font-weight: bold;
     font-size: 20px;
@@ -154,5 +221,25 @@ nav {
 }
 
 #resume-download:hover {
-    transform: scale(1.2);
+    transform: translateX(-50%) scale(1.2);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+
+    a {
+        display: inline-block;
+        font-size: 50px;
+        color: black;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    a:hover {
+        transform: scale(1.3);
+
+    }
+
 }
